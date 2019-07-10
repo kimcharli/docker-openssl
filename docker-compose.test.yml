@@ -1,0 +1,9 @@
+# https://docs.docker.com/docker-hub/builds/automated-testing/
+sut:
+  build: .
+  dockerfile: Dockerfile.test
+  environment:
+    - COMMON_NAME=ccc
+    - KEY_NAME=kkk
+  volumes:
+    - "${PWD}:/work:rw"

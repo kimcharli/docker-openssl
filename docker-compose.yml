@@ -1,0 +1,10 @@
+openssl:
+  build: .
+  dockerfile: Dockerfile
+  environment:
+    - COMMON_NAME=ccc
+    - KEY_NAME=kkk
+  volumes:
+    - "${PWD}:/work:rw"
+
+

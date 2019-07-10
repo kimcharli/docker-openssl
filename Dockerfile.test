@@ -7,8 +7,7 @@ RUN apk add openssl
 WORKDIR /work
 
 ADD run_create.sh /run_create.sh
+ADD run_tests.sh /run_tests.sh
 
-CMD ["sh", "/run_create.sh"]
-
-
+CMD ["sh", "/run_tests.sh"]
 
